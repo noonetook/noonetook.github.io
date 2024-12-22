@@ -7,9 +7,13 @@
     <style>
         body {
             background-color: pink;
-            background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="50" height="50"><text x="0" y="40" font-size="40">🍒</text></svg>');
+            background-image: 
+                linear-gradient(45deg, transparent 74%, black 75%, black 76%, transparent 77%, transparent),
+                linear-gradient(-45deg, transparent 74%, black 75%, black 76%, transparent 77%, transparent),
+                url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="50" height="50"><text x="0" y="40" font-size="40">🍒</text></svg>');
             background-repeat: repeat;
-            background-size: 50px 50px; /* Adjust the size as needed */
+            background-size: 100px 100px, 100px 100px, 50px 50px;
+            background-position: 0 0, 0 0, 0 0;
         }
     </style>
 </head>
